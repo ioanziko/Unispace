@@ -28,7 +28,7 @@ Front-end team:
 * [Giannis Dalakouras](https://github.com/jdala)
 * [George Babatzelios](https://github.com/gbabatz)
 * [Dimitris Konstantinos Papadopoulos](github.com/dimkpapadopoulos)
-* Elpida Karapepera
+* [Elpida Karapepera](https://github.com/elpidakrp)
 * [Evi Alvanaki](https://github.com/evialv)
 * [Fanis Spyrou](https://github.com/fanisspr)
 * [Mixalis Augeris](https://github.com/mikeavg)
