@@ -1,0 +1,136 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: Tahoma , sans-serif;
+	overflow-x:hidden;
+}
+html{
+	background: url("../bg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.form-area{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,calc(-50% + 87px));
+	width: 300px;
+	height: 300px;
+	box-sizing: border box;
+	background: rgba(0,0,0,0.6);
+	padding: 40px;
+}
+h2{
+	margin: 0;
+	padding:0 0 20px;
+	font-weight:bold;
+	color: #ffffff;
+	text-align:center;
+	text-decoration:underline;
+}
+.form-area p{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+	color: #ffffff;
+}
+.form-area input,select{
+	margin-bottom: 20px;
+	width: 100%;
+}
+.form-area input[type=text],
+.form-area input[type=password]{
+	border:none;
+	border-bottom: 1px solid #ffffff;
+	background-color: transparent;
+	outline:none;
+	height:40px;
+	color:#ffffff;
+	display: 16px;
+}
+::placeholder{
+	color:#ffffff;
+}
+.form-area input[type=submit]{
+	border:none;
+	height:40px;
+	outline:none;
+	color:#ffffff;
+	font-size: 20px;
+	background-color:red;
+	cursor:pointer;
+	border-radius:20px;
+}
+.form-area input[type=submit]:hover{
+	background-color:#ffffff;
+	color:black;
+}
+.avatar{
+    width: 260px;
+    height: auto;
+    position: absolute;
+    top: -175px;
+    left: calc(50% - 140px);
+}
+.icon {
+  padding: 10px;
+  color: white;
+  min-width: 20px;
+  text-align: center;
+
+}
+.input-container {
+  display: -ms-flexbox;
+  display: flex;
+  
+}
+
+
+@media screen and ( min-width: 475px ) and ( max-height: 550px )
+{
+  .form-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,calc(-50% + 112px));
+    width: 300px;
+    height: 300px;
+    box-sizing: border box;
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+}
+
+}
+@media screen and ( min-width: 425px ) and ( max-height: 475px )
+{
+  .form-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,calc(-50% + 136px));
+    width: 300px;
+    height: 300px;
+    box-sizing: border box;
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+}
+
+}
+@media screen and (max-height: 425px) {
+  
+  .form-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,calc(-50% + 176px));
+    width: 300px;
+    height: 300px;
+    box-sizing: border box;
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+}
+
+}
+

@@ -1,0 +1,1419 @@
+body {margin: 0;}
+.loading_res {
+  filter: alpha(opacity=21);
+  -moz-opacity: 0.21;
+  -khtml-opacity: 0.21;
+  opacity: 0.21;
+overflow:hidden;
+
+  
+}
+
+.loading {
+display:block;
+position: relative;
+-webkit-touch-callout: none; 
+-webkit-user-select: none; 
+-khtml-user-select: none; 
+-moz-user-select: none;
+-ms-user-select: none; 
+user-select: none; 
+
+  
+}
+
+.loading::before {
+    position: absolute;
+  top: 50%;
+    left: 50%;
+  content: "UniSpace";
+  font-family: sans-serif;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #009fcf, #70c9e4, #009fcf);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 1.7s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  margin-left: -81px;
+  margin-top: -21px;
+  
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 900%;
+  }
+}
+
+@-moz-keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 900%;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 900%;
+  }
+}
+
+@-o-keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 900%;
+  }
+}
+#results {
+	min-height: 100px;
+	
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    opacity: 1;
+    margin-bottom: 15px;
+    display:none;
+    position:fixed;
+    top:102px;
+    right:4px;
+	z-index: 99;
+}
+
+.alert.success {background-color: #4CAF50;
+    display:none;}
+
+.alert.warning {background-color: #ff9800;
+    display:none;}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+.body {
+display:inline-block;
+}
+
+.full_width{
+	width:100%;
+}
+
+.body_parts {
+display:block;
+float:left;
+line-height:24px;
+}
+
+.body_gap {
+display:block;
+width:100%;
+}
+
+
+
+@media screen and (max-width: 799px) {
+
+
+
+
+
+  .grades_container {width: 100%;}
+  .grades_hide {display: none;}
+  .grades_type_grades_dm_ects {width: 15%;}
+  .grades_professors {width: 25%;}
+  .grades_foot_right {padding:10px 20px 10px 10px;}
+  .grades_foot_left {padding:10px 10px 10px 20px;}
+
+}
+
+
+
+
+
+
+.grades_container {
+  margin: 0px auto;
+  width:80%;
+  margin-top: 40px;
+}
+
+/* CSS for tables */
+.grades_default {
+  display: block;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.grades_analytical {
+  display: none;
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.grades_table {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  width: 100%;
+  /* background-color: #93e1ed; */
+}
+
+.grades_table tr,th,td {
+  box-sizing: border-box;
+}
+
+.grades_table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.grades_title {
+  box-sizing: border-box;
+  pointer-events: none;
+  padding: 12px 0px 12px 5px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #009688;
+  color: #fff;
+  width: 100%;
+}
+
+.grades_head {
+  pointer-events: none;
+  padding:20px 10px 20px 10px;
+  font-size: 16px;
+}
+
+.grades_cell {
+  padding:10px;
+  font-size: 15px;
+}
+
+.grades_foot {
+  overflow: hidden;
+  box-sizing: border-box;
+  pointer-events: none;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  /* background-color: #93e1ed; */
+  margin-bottom: 10px;
+}
+
+.grades_foot_left {
+  box-sizing: border-box;
+  float: left;
+  padding: 20px 5px 20px 5px;
+  width: 60%;
+}
+
+.grades_foot_right {
+  box-sizing: border-box;
+  text-align: right;
+  float: right;
+  padding: 20px 5px 20px 5px;
+  width: 40%;
+}
+
+.grades_sum {
+  overflow: hidden;
+  box-sizing: border-box;
+  pointer-events: none;
+  font-size: 18px;
+  font-weight: bold;
+  width: 100%;
+  margin-top: 30px;
+  background-color: #009688;
+  color: #fff;
+}
+
+.grades_sum_left {
+  box-sizing: border-box;
+  float: left;
+  padding:10px 0px 10px 5px;
+  width: 60%;
+}
+
+.grades_sum_right {
+  box-sizing: border-box;
+  text-align: right;
+  float: right;
+  padding:10px 5px 10px 0px;
+  width: 40%;
+}
+
+.grades_type_grades_dm_ects {width: 5%;}
+
+.grades_ex_type_grades_dm_ects {width: 10%;}
+
+.grades_exams_date {width: 10%;}
+
+.grades_professors {width: 20%;}
+
+.grades_redFont {color: red !important; padding-right: 5px;}
+
+.grades_redFont_shadow {color: #fc4b4b !important; padding-right: 5px;}
+
+.grades_center {text-align: center !important;}
+
+
+/* CSS for toggle switch butotn */
+.grades_switch_box {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 0px 20px 0px;
+}
+
+.grades_switch_text {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+.grades_switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+}
+
+.grades_switch input {
+  opacity: 0;
+}
+
+.grades_slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #009688;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 10px;
+}
+
+.grades_slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.grades_switch input:checked + .grades_slider:before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+
+
+
+
+.profile_body {
+  margin-top: 40px;
+  overflow: hidden;
+}
+
+.profile_container {
+	color: #000;
+  max-width: 80%;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.profile_heading {
+  text-align: center;
+  font-size: 45px;
+  border-bottom: 1px solid black;
+  line-height: 40px;
+  padding-bottom: 8px;
+  margin-bottom: 30px;
+}
+
+.profile_personal {
+  display: table;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+}
+
+.profile_academic {
+  display: table;
+  box-sizing: border-box;
+  float: right;
+  width: 50%;
+  padding-left: 10px;
+}
+
+.profile_subheading {
+  font-size: 20px;
+  text-align: left !important;
+  font-weight: bold;
+  color: #7c7c7c;
+}
+
+.profile_row {
+  display: table-row;
+  box-sizing: border-box;
+  line-height: 30px;
+}
+
+.profile_row:hover {
+  background-color: #f5f5f5;
+}
+
+.profile_cell {
+  box-sizing:border-box;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-left: 0px;
+  width: 50%;
+  text-align: left;
+  color: #000;
+  font-size: 18px;
+
+}
+
+.profile_field_title {
+  float: left;
+  font-weight: bold;
+}
+
+.profile_field_content {
+  float: right;
+}
+
+
+/**********************************************************/
+/**********Changes style at different screen size**********/
+/**********************************************************/
+@media screen and (max-width: 1060px) {
+.profile_container {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.profile_personal {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 10px 20px 10px;
+}
+
+.profile_academic {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 10px 0px 10px;
+}
+
+}
+
+
+
+/* FOR CURRICULUM */
+
+
+	.curriculum_input {
+		padding: 8px;
+		padding-right: 13px;
+		margin: 6px;
+		font-size: 1em;
+		line-height: normal;
+	}
+
+	.curriculum_label {
+    margin-bottom: 0px;
+	font-size: 1.1em;
+	}
+.curriculum_button {
+	-moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	-webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	box-shadow: 0px 1px 0px 0px #f0f7fa;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
+	background:-moz-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-webkit-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-o-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:-ms-linear-gradient(top, #33bdef 5%, #019ad2 100%);
+	background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+	background-color:#33bdef;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 26px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #5b6178;
+}
+.curriculum_button:active {
+	position:relative;
+	top:1px;
+}
+
+	
+	
+	.curriculum_courses {
+	/*display:none;*/
+	display: inline-block;
+	}
+	
+	.curriculum_add_course {
+margin-left: 20px;
+display: inline-block;
+height: 551px;
+vertical-align: top;
+}
+	
+	
+	.curriculum_sector {
+	/*display:none;*/
+	display: inline-block;
+	}
+	
+	
+	.curriculum_add_course_text {
+width: 100px;
+
+height: 100px;
+
+border-radius: 50%;
+
+font-size: 66px;
+
+line-height: 84px;
+
+text-align: center;
+
+background: #FFF;
+
+color: #19D4C6;
+
+cursor:pointer;
+
+border: 1px solid #5f5656;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none;
+            user-select: none; 
+
+			margin-top: 225px;
+			
+}
+	
+
+	.curriculum_add_sector {
+	
+	
+	margin-left: 20px;
+display: inline-block;
+height: 196px;
+vertical-align: top;
+
+	
+	
+	}
+	
+	.curriculum_add_sector_text {
+	
+	width: 100px;
+
+height: 100px;
+
+border-radius: 50%;
+
+font-size: 66px;
+
+line-height: 84px;
+
+text-align: center;
+
+background: #FFF;
+
+color: #19D4C6;
+
+cursor:pointer;
+
+border: 1px solid #5f5656;
+
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none; 
+        -ms-user-select: none;
+            user-select: none; 
+
+			margin-top: 47px;
+	
+	
+	}
+
+
+	.curriculum_semester_header {
+	
+	width: 100%;
+height: 58px;
+border-top: 1px solid #5aaaf8;
+border-bottom: 1px solid #5aaaf8;
+line-height: 58px;
+font-size: 18px;
+	
+	}
+	
+	
+	
+	
+	.open_course {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+}
+
+
+.open_course_content {
+background-color: #fefefe;
+
+margin: auto;
+
+border: 1px solid #888;
+
+display: table;
+
+padding: 25px;
+}
+
+
+.open_course_close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.open_course_close:hover,
+.open_course_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+	
+	
+	.curriculum_semester_inside_course {
+	display: block;
+padding: 8px;
+	
+	}
+	
+	.curriculum_semester_chain {
+	font-size: 12px;
+font-style: italic;
+color: #686262;
+margin-right: 8px;
+}
+
+.curriculum_semester_forms {
+display:none;
+}
+
+
+/* END CURRICULUM */
+
+
+/* PROFESSORS_LIST */
+
+
+#professorListTable{
+
+width:100%;
+margin: auto;
+  table-layout:auto;
+  border:1px solid black;
+  font-family:  Verdana, Geneva, sans-serif; 
+  font-size: 0.9em;
+}
+
+
+
+#professorListTable,.professorListData,.professorListHeader{
+
+  border-collapse: collapse;
+  padding:5px 5px 2px 3px;
+
+}
+
+.professorListHeader{
+
+border-bottom:2px solid black;
+text-align:left;
+height:35px;
+}
+
+
+.professorListData{
+
+<!-- max-width:min-content;-->
+<!--width:max-content;-->;
+border-bottom:1.5px solid black;
+height:35px;
+padding: 6px 3px 6px 3px;
+}
+
+.professorListRowData:hover{
+
+background-color:#e5e796;
+
+}
+
+
+
+.professorListData.professorListHeader{
+
+display:table-cell;
+
+}
+
+
+
+ @media screen and (max-width: 380px){
+ 
+ .professorListData{
+ font-size:0.9em;
+ }
+ #professorListTable{
+ 
+ overflow-x:auto;
+ 
+ }
+ 
+ 
+ 
+ }
+ 
+ /* END PROFESSORS_LIST */
+
+  /* REGISTER */
+
+ .register_container {
+  margin: 0px auto;
+  width:80%;
+  margin-top: 40px;
+}
+
+.register_method_buttons {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.register_method {
+  box-sizing: border-box;
+  border: 1px solid black;
+  color: #fff;
+  background-color: #009688;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#register_uploadedCSV {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.register_method:hover {
+  cursor: pointer;
+  background-color: #007469;
+}
+
+.register_file_error {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0px;
+  font-size: 17px;
+  font-weight: bold;
+  color: red;
+}
+
+.register_input_container {
+  box-sizing: border-box;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.register_input_wrapper {
+  box-sizing: border-box;
+  margin: 10px 0px;
+}
+
+.register_input_label {
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.register_input {
+  box-sizing: border-box;
+  border: 1px solid grey;
+  width: 100%;
+  padding: 6px 12px;
+  margin: 4px 8px;
+  font-size: 17px;
+  outline: none;
+}
+
+.register_input_error {
+  box-sizing: border-box;
+  margin: 0px 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+}
+
+.register_input_buttons {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.register_input_button {
+  box-sizing: border-box;
+  border: 1px solid black;
+  color: #fff;
+  background-color: #009688;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border-radius: 2px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.register_input_button:hover {
+  cursor: pointer;
+  background-color: #007469;
+
+}
+ 
+ 
+ @media screen and (max-width: 799px) {
+  .register_container {width: 100%;}
+
+  .register_method {
+    display: block;
+    margin: 10px 20px;
+  }
+
+  .register_input_button {
+    display: block;
+    margin: 10px 20px;
+  }
+}
+ 
+   /* END REGISTER */
+
+      /* NEW_CHOOSE_SECTOR */
+
+   
+   .choose_sector_frame{
+position: relative;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+text-align: center;
+
+
+
+}
+
+.choose_sector_button {
+background-color: #009688;
+color:white;
+padding: 10px 32px;
+border: none;
+
+
+}
+.choose_sector_button:hover {
+background-color: #D3D3D3;
+color:black;
+cursor: pointer;
+
+}
+.choose_sector_select{
+  background-color: #009688;
+  border: 6px solid transparent;
+  color:white;
+ cursor: pointer;
+}
+
+      /* END NEW_CHOOSE_SECTOR */
+
+	  
+	        /* NEW_CHOOSE_COURSE */
+
+	  .task2Container{
+    box-sizing: border-box;
+    width: max-content;
+    margin: auto;
+	margin-bottom: 28px;
+}
+
+
+.task2Underline{
+text-decoration:underline;
+font-weight:bold;
+}
+
+
+.task2radio{
+float:right;
+}
+
+.task2Input{
+float:right;
+margin-left:10px;
+}
+
+.task2InputRadio{
+float:left;
+}
+
+#task2submit{
+float:right;
+height:28px
+}
+	        /* END NEW_CHOOSE_COURSE */
+
+			/* MY_SECTOR */
+
+			.container {
+
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position:relative;
+  background-color:#93e1ed;
+  padding:1px;
+}
+.container:hover input ~ .checkmark {
+  background-color:#D3D3D3;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.sector_font {
+font-size:18px;
+padding:8px;
+}
+.myBox{
+background-color: #93e1ed;
+position:relative;
+text-align:center;
+padding:5%;
+margin:5%;
+border:15px solid #009688;
+}
+.sector_button {
+background-color:#009688;
+color:white;
+padding: 10px 32px;
+border: none;
+font-weight:bold;
+}
+.sector_button:hover {
+background-color:#D3D3D3;
+color:black;
+cursor: pointer;
+font-weight:bold;
+}
+
+			/* END MY_SECTOR */
+
+						/* MY_COURSE */
+
+			
+			.statement_container {
+  margin: 0px auto;
+  width:80%;
+  margin-top: 40px;
+}
+
+.statement_semesters {}
+
+.statement_title {
+  box-sizing: border-box;
+  margin: 20px 0px;
+}
+
+.statement_block {
+  box-sizing: border-box;
+  margin: 5px 0px;
+  padding-left: 20px;
+}
+
+.statement_block_border {
+  border-bottom: 2px solid black;
+}
+
+.statement_title_text {
+  display: block;
+  box-sizing: border-box;
+  pointer-events: none;
+  padding: 10px 0px 10px 5px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #009688;
+  color: #fff;
+  width: 100%;
+}
+
+.statement_subtitle_text {
+  display: inline-block;
+  box-sizing: border-box;
+  pointer-events: none;
+  padding: 8px 0px 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #000;
+  width: 50%;
+}
+
+.statement_subject {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 4px 0px 4px 5px;
+  font-size: 16px;
+  color: #000;
+}
+
+.statement_unavailable {
+  pointer-events: none;
+  color: grey;
+}
+
+.statement_buttons {
+  box-sizing: border-box;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.statement_button {
+  box-sizing: border-box;
+  border: 1px solid black;
+  color: #fff;
+  background-color: #009688;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border-radius: 2px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.statement_button:hover {
+  cursor: pointer;
+  background-color: #007469;
+}
+
+}
+
+
+@media screen and (max-width: 799px) {
+  .statement_container {width: 100%;}
+}
+
+						/* END MY_COURSE */
+
+						
+						/* COURSE */
+
+	      #courses_customers{
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 17px;
+        border-collapse: collapse;
+        margin: auto;
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        table-layout: fixed;
+         width: 65%;
+    }
+
+      #courses_customers th, #courses_customers td{
+        text-align: center;
+        padding: 8px;
+        border: 1px solid #ddd;
+
+      }
+
+
+      #courses_customers th {
+        background-color: #5a6370;
+        color: white;
+        padding-left: 18px;
+        padding-right: 18px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+
+      }
+
+
+      .courses_lesson{
+        font-weight: 600;
+        color: #33353a;
+		cursor:pointer;
+      }
+
+      .back_color{
+        background-color: #ebeff4;
+      }
+
+      #courses_customers tr:hover {background-color: #ddd;}
+
+					
+						
+						/* END COURSE */
+						
+						
+												/* COURSE_INFO */
+
+						.temp_page_container {
+  margin: 0px auto;
+  width:80%;
+  margin-top: 40px;
+}
+
+.temp_page_title {
+  box-sizing: border-box;
+  pointer-events: none;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 12px 0px;
+  width: 100%;
+}
+
+.temp_page_disabled {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 5px 0px;
+  width: 100%;
+  color: red;
+}
+
+.temp_page_info_container {
+  margin: 0px auto;
+  width:80%;
+}
+
+.temp_page_info {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding:10px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.temp_page_info_dscr {
+  box-sizing: border-box;
+  width:100%;
+  padding: 0px 20px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+.temp_page_info_disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+.temp_page_popup {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 20;
+  width: 70%;
+  max-height: 90%;
+  background-color: #f5f5f5;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 40px 10px 40px 10px;
+  overflow-y: auto;
+}
+
+.temp_page_popup::-webkit-scrollbar {
+  width: 5px;
+}
+
+.temp_page_popup::-webkit-scrollbar-track {
+  box-shadow: none;
+  border-radius: 10px;
+}
+
+.temp_page_popup::-webkit-scrollbar-thumb {
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+
+.temp_page_popup::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.temp_page_popup_bg{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+}
+
+.temp_page_popup_heading {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 15px;
+}
+
+.temp_page_popup_heading_info {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 0px;
+}
+
+.temp_page_popup_table {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0px auto;
+  border: 1px solid gray;
+}
+
+.temp_page_popup_table tr,th,td {
+  box-sizing: border-box;
+}
+
+.temp_page_popup_table th {
+  pointer-events: none;
+  padding:10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.temp_page_popup_table td {
+  padding:10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.temp_page_popup_button_container {
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.temp_page_popup_button_text {
+  box-sizing: border-box;
+  display: block;
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.temp_page_popup_button {
+  box-sizing: border-box;
+  background-color: #009688;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 10px;
+  margin: 0px 5px 0px 5px;
+}
+
+.temp_page_popup_button:hover {
+  background-color: #007469;
+  cursor: pointer;
+}
+
+
+.temp_page_buttons {
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.temp_page_deadline {
+  box-sizing: border-box;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 12px 0px 12px 0px;
+  width: 100%;
+  color: red;
+}
+
+.temp_page_btn_label {
+  box-sizing: border-box;
+  border: 1px solid black;
+  color: #fff;
+  background-color: #009688;
+  padding: 3px;
+  border-radius: 2px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.temp_page_btn_label:hover {
+  background-color: #007469;
+}
+
+#temp_page_uploadedCSV {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+@media screen and (max-width: 799px) {
+  .temp_page_container {width: 100%;}
+  .temp_page_popup {width: 90%;}
+}
+
+						/* END COURSE_INFO */
+
+						/* USERS */
+
+						
+						       .students_info table{
+          font-family: Verdana, Geneva, sans-serif;
+          font-size: 18px;
+
+          border-collapse: collapse;
+          margin: auto;
+          box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          table-layout: fixed;
+           width: 65%;
+      }
+
+      .students_info th, .students_info td{
+        text-align: center;
+        padding: 8px;
+        border: 1px solid #ddd;
+
+      }
+
+
+      .students_info th {
+        background-color: #5a6370;
+        color: white;
+
+      }
+
+      .back_color{
+        background-color: #ebeff4;
+
+      }
+
+      #students_info tr:hover {background-color: #ddd;}
+      .students_info{
+        margin-top: 40px;
+      }
+
+    .form_position{
+      text-align: center;
+
+    }
+	
+	      .inputhing[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #5a6370;
+        margin-left: 17.5%;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding: 12px;
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+      .inputhing[type=text]:focus {
+        width: 30%;
+      }
+
+							/* END USERS */
+

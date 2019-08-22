@@ -1,0 +1,72 @@
+[  
+   {  
+     "name": "Michael Bruce",  
+     "gender": "Male",  
+     "designation": "System Architect"  
+   },  
+   {  
+     "name": "Jennifer Winters",  
+     "gender": "Female",  
+     "designation": "Senior Programmer"  
+   },  
+   {  
+     "name": "Donna Fox",  
+     "gender": "Female",  
+     "designation": "Office Manager"  
+   },  
+   {  
+     "name": "Howard Hatfield",  
+     "gender": "Male",  
+     "designation": "Customer Support"  
+   },  
+   {  
+     "name": "Kevin Sanders",  
+     "gender": "Male",  
+     "designation": "Food service worker"  
+   },
+   {  
+     "name": "Fay K. Whitney",  
+     "gender": "Female",  
+     "designation": "Bookbinder"  
+   },
+   {  
+     "name": "Heather Hernandez",  
+     "gender": "Female",  
+     "designation": "Corporate recruiter"  
+   },
+   {  
+     "name": "Rhonda Okelley",  
+     "gender": "Female",  
+     "designation": "Image designer"  
+   },
+   {  
+     "name": "Sandy Jacobsen",  
+     "gender": "Male",  
+     "designation": "Publicity agent"  
+   },
+   {  
+     "name": "Marisa Williams",  
+     "gender": "Female",  
+     "designation": "Molder"  
+   },
+   {  
+     "name": "Neil Simmons",  
+     "gender": "Male",  
+     "designation": "Engine and other machine assembler"  
+   },
+   {  
+     "name": "Raymond Lara",  
+     "gender": "Male",  
+     "designation": "Clerical assistant"  
+   },
+   {  
+     "name": "William Carpenter",  
+     "gender": "Male",  
+     "designation": "Broker"  
+   },
+   {  
+     "name": "Ted Baer",  
+     "gender": "Male",  
+     "designation": "Conservation worker"  
+   }
+ ]
