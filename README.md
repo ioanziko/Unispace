@@ -1,10 +1,10 @@
 # Unispace
-This repository is the result of a project in the Department of Electrical and Computer Engineering of the Democritus University of Thrace, in Xanthi, Greece. This project was developed in 2019 throughout the "Software Engineering" course and it is the work of students during the semester.
-It is a web-based university management software, for use by students, faculty and administrators.
+This repository is the result of a project in the Department of Electrical and Computer Engineering of the Democritus University of Thrace, in Xanthi, Greece. This project was developed in 2019 throughout the "Software Engineering" course and it is the work of students during the semester.<br>
+It is a web-based university management software, for use by students, faculty and administrators.<br>
 It supports enrollment, grade books, a messaging service and overall curriculum management. It supports all modern browsers and we have also created an Android app.
 
 ## Technologies-Prerequisites
-This project was written in HTML, CSS, Bootstrap, JavaScript, jQuery, PHP and SQL.
+This project was written in HTML, CSS, Bootstrap, JavaScript, jQuery, PHP and SQL.<br>
 In order to execute, it requires a web server or local testing software like xampp or wamp.
 
 ## Getting Started
@@ -17,7 +17,7 @@ In order to execute, it requires a web server or local testing software like xam
 0.8.0-beta
 
 ## Project Status
-The project is not 100% complete and we stopped the development, as the course ended.
+The project is not 100% complete and we stopped the development, as the course ended.<br>
 It is possible that the development will continue in the next academic year.
 
 ## Authors
